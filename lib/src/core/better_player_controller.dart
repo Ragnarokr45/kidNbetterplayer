@@ -1140,7 +1140,7 @@ class BetterPlayerController {
     final bool isPipSupported =
         (await videoPlayerController!.isPictureInPictureSupported()) ?? false;
 
-    return isPipSupported && !_isFullScreen;
+    return isPipSupported;
   }
 
   ///Handle VideoEvent when remote controls notification / PiP is shown
